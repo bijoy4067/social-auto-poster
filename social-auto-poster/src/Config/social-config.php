@@ -2,9 +2,12 @@
 
 return [
     'facebook' => [
-        'app_id' => '4071144333111775',
-        'app_secret' => 'ebf17438e572c9dbd1d51a18091114bf',
-        'redirect_url' => 'https://updater.wpwebelite.com/codebase/SAP-PHP/fb/index.php',
+        'app_id' => '908632594129836',
+        'app_secret' => '10a4902e18871a83309229119a23e94c',
+        'redirect_url' => 'https://dainikshikksha.dev/auth/facebook/callback',
+        // 'app_id' => '4071144333111775',
+        // 'app_secret' => 'ebf17438e572c9dbd1d51a18091114bf',
+        // 'redirect_url' => 'https://updater.wpwebelite.com/codebase/SAP-PHP/fb/index.php',
         'app_version' => 'v3.0',
         'permissions' => [
             'email',
@@ -22,9 +25,12 @@ return [
         'redirect_url' => 'https://updater.wpwebelite.com/codebase/SAP-PHP/fb/index-instagram.php',
     ],
     'linkedin' => [
-        'app_id' => '78atjnjdyfgvd8',
-        'app_secret' => 'DSgb8XJB6jHpgXWq',
-        'redirect_url' => 'https://updater.wpwebelite.com/codebase/SAP-PHP/li/index.php',
+        'app_id' => '86u9i23dx9vf6v',
+        'app_secret' => 'WPL_AP1.lRzFuhWcL6Q37iWR.Q/Dt+g==',
+        'redirect_url' => 'http://localhost:8000',
+        // 'app_id' => '78atjnjdyfgvd8',
+        // 'app_secret' => 'DSgb8XJB6jHpgXWq',
+        // 'redirect_url' => 'https://updater.wpwebelite.com/codebase/SAP-PHP/li/index.php',
     ],
 
     'reddit' => [

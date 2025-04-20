@@ -1,9 +1,9 @@
 <?php
 
-use AutoPoster\Social\FacebookConfig;
 use Illuminate\Support\Facades\Route;
+use SocialPoster\Social\FacebookConfig;
 
 Route::get('/', function () {
     $facebook = new FacebookConfig();
-    dd($facebook->getConfig());
+    dd($facebook->init());
 });

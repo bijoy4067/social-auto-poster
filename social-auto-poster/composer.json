@@ -1,0 +1,21 @@
+{
+    "name": "autoposter/social",
+    "description": "Social Auto Poster Package",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "facebook/graph-sdk": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "AutoPoster\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version": "1.0.0",
+    "config": {
+        "sort-packages": true
+    }
+}

@@ -2,18 +2,32 @@
 
 namespace SocialPoster\Abstract;
 
+use SocialPoster\Social\FacebookConfig;
+
 class AbstractConfig
 {
-    private $configPath = __DIR__ . '/../Config/social-config.php';
-    private $config = null;
+    protected static $config = null;
 
-    public function __construct()
+    protected static function loadConfig()
     {
-        $this->config = file_get_contents($this->configPath);
+        if (self::$config === null) {
+            self::$config = include(__DIR__ . '/../Config/social-config.php');
+        }
+        return self::$config;
     }
 
-    public static function facebook()
+    public static function __callStatic($name, $arguments)
     {
-        dd(self::$config);
+        $config = self::loadConfig();
+        if (!isset($config[$name])) {
+            throw new \Exception("Social media platform '{$name}' not configured");
+        }
+
+        $className = 'SocialPoster\\Social\\' . ucfirst($name) . 'Config';
+        if (!class_exists($className)) {
+            throw new \Exception("Class {$className} not found");
+        }
+
+        return new $className($config[$name]);
     }
 }

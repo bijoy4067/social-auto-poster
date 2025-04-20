@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use SocialPoster\Social\FacebookConfig;
+use AutoPoster\Facades\SocialPoster;
 
 Route::get('/', function () {
-    $facebook = new FacebookConfig();
-    dd($facebook->init());
+    dd(SocialPoster::facebook()->getLoginURL());
 });

@@ -6,13 +6,21 @@ return [
         'app_secret' => 'ebf17438e572c9dbd1d51a18091114bf',
         'redirect_url' => 'https://updater.wpwebelite.com/codebase/SAP-PHP/fb/index.php',
         'app_version' => 'v3.0',
-        'instagram' => [
-            'app_id' => '4071144333111775',
-            'app_secret' => 'ebf17438e572c9dbd1d51a18091114bf',
-            'redirect_url' => 'https://updater.wpwebelite.com/codebase/SAP-PHP/fb/index-instagram.php',
-        ],
-    ],
+        'permissions' => [
+            'email',
+            'public_profile',
+            'publish_pages',
+            'pages_manage_posts',
+            'publish_to_groups',
+            'business_management'
+        ]
 
+    ],
+    'instagram' => [
+        'app_id' => '4071144333111775',
+        'app_secret' => 'ebf17438e572c9dbd1d51a18091114bf',
+        'redirect_url' => 'https://updater.wpwebelite.com/codebase/SAP-PHP/fb/index-instagram.php',
+    ],
     'linkedin' => [
         'app_id' => '78atjnjdyfgvd8',
         'app_secret' => 'DSgb8XJB6jHpgXWq',
@@ -24,10 +32,26 @@ return [
         'client_secret' => 'kQHHqYKnT1s2bmFVbF70kq2WyTm8rw',
         'redirect_url' => 'https://updater.wpwebelite.com/codebase/SAP-PHP/reddit/index.php',
         'scopes' => [
-            'save', 'modposts', 'identity', 'edit', 'flair', 'history',
-            'modconfig', 'modflair', 'modlog', 'modposts', 'modwiki',
-            'mysubreddits', 'privatemessages', 'read', 'report', 'submit',
-            'subscribe', 'vote', 'wikiedit', 'wikiread'
+            'save',
+            'modposts',
+            'identity',
+            'edit',
+            'flair',
+            'history',
+            'modconfig',
+            'modflair',
+            'modlog',
+            'modposts',
+            'modwiki',
+            'mysubreddits',
+            'privatemessages',
+            'read',
+            'report',
+            'submit',
+            'subscribe',
+            'vote',
+            'wikiedit',
+            'wikiread'
         ],
     ],
 
